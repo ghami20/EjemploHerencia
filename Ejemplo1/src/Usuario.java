@@ -2,9 +2,9 @@ import javax.swing.JOptionPane;
 
 public class Usuario {
 
-	private String nombre;
-	private String mail;
-	private String contrasenia;
+	protected String nombre;
+	protected String mail;
+	protected String contrasenia;
 
 	public Usuario(String nombre, String mail, String contrasenia) {
 		this.nombre = nombre;
@@ -40,7 +40,8 @@ public class Usuario {
 	public String toString() {
 		return "Usuario [nombre=" + nombre + ", mail=" + mail + ", contrasenia=" + contrasenia + "]";
 	}
-
+	/**
+	 * LOGIN DE LA CLASE USUARIO*/
 	public boolean Login(String mail, String contrasenia) {
 
 		if (this.contrasenia.equals(contrasenia) && this.getMail().equals(mail)) {

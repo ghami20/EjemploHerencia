@@ -1,6 +1,4 @@
-import Ejercicio1.Empleado;
-
-
+package Ejercicio1;
 public class Gerente extends Empleado{
 	
 	private String puesto;
